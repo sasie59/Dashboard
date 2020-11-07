@@ -1,0 +1,43 @@
+.WeekBlock {
+  flex: 114;
+  display: flex;
+  border-radius: 10px;
+  .date {
+    flex: 1;
+    margin: 0 5px;
+    color: #b1b1b1;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: space-around;
+    border: 2px solid #cccccc;
+
+    &:hover .ball {
+      background-color: #bde6ef;
+    }
+
+    .ball {
+      left: 50%;
+      width: 20px;
+      height: 20px;
+      bottom: 5%;
+      position: absolute;
+      border-radius: 100%;
+      transform: translateX(-50%)
+    }
+
+    &.selected {
+      .ball {
+        background-color: #5dbed2;
+      }
+    }
+    .name {
+
+    }
+    .number {
+
+    }
+  }
+}

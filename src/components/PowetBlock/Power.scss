@@ -1,0 +1,31 @@
+.Power {
+  &:nth-of-type(1) .hotdog { background-color: #d2785c; }
+  &:nth-of-type(2) .hotdog { background-color: #d2bf5c; }
+  &:nth-of-type(3) .hotdog { background-color: #5ed17d; }
+  &:nth-of-type(4) .hotdog { background-color: #5dbed2; }
+  &:nth-of-type(5) .hotdog { background-color: #5d93d2; }
+
+  .number {
+    flex: 1;
+    font-size: 20px;
+    color: #aaaaaa
+  }
+  .space {
+    
+  }
+  .bar {
+    flex: 1;
+    .grayLine {
+      flex: 8;
+      width: 80%;
+      height: 10px;
+      display: inline-block;
+      border-radius: 10px;
+      background-color: #eeeeee;
+    }
+    .hotdog {
+      border-radius: 10px;
+      transition: width 150ms;
+    }
+  }
+}

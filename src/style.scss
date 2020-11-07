@@ -1,0 +1,31 @@
+.dashboard {
+  height: 100vh;
+  display: flex;
+  background-color: #eee;
+  align-items: center;
+  justify-content: center;
+  .outside {
+    width: 1024px;
+    height: 690px;
+    display: flex;
+    background-color: #fff;
+    padding: 10px;
+    .left {
+      flex: 411;
+      display: flex;
+      flex-direction: column;
+      /* HelloBlack */
+      /* WeatherBlock */
+      /* ActionBlock */
+    }
+    .right {
+      flex: 575;
+      display: flex;
+      flex-direction: column; 
+    }
+    .space {
+      width: 10px;
+      height: auto;
+    }
+  }
+}

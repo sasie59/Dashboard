@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import HelloBlock from './components/HelloBlock';
+import WeatherBlock from './components/WeatherBlock';
+import ActionBlock from './components/ActionBlock';
+import WeekBlock from './components/WeekBlock';
+import PowerBlock from './components/PowetBlock';
+import ToDoList from './components/ToDoListBlock'
+
+import './style.scss';
+
+export default class index extends Component {
+  constructor() {
+    super();
+    this.state = {
+
+    }
+  }
+  render() {
+    return (
+      <div className="dashboard">
+        <div className="outside">
+          <div className='left'>
+            <HelloBlock />
+            <WeatherBlock />
+            <ActionBlock />
+          </div>
+          <div className="space"></div>
+          <div className='right'>
+            <WeekBlock />
+            <PowerBlock />
+            <ToDoList />
+          </div>
+        </div>
+      </div>
+    )
+  }
 }
-
-export default App;

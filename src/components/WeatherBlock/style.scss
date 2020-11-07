@@ -1,0 +1,57 @@
+.WeatherBlock {
+  flex: 313;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #eeeeee;
+  border-radius: 10px;
+  .out {
+    display: flex;
+    justify-content: center;
+    .sun {
+      width: 168px;
+      height: 192px;
+    }
+  }
+  .county {
+    color: #b2b2b2;
+    font-size: 36px;
+    text-align: center;
+    margin: 5px;
+  }
+  .door {
+    display: flex;
+    padding: 5px;
+    .temperature {
+      flex: 1;
+      display: flex;
+      font-size: 18px;
+      text-align: center;
+      font-weight: bolder;
+      border: 2px solid #dddddd;
+      border-radius: 10px;
+      #low {
+        color: #ffc836;
+        margin: 5px auto;
+        font-size: 24px;
+      }
+      #top {
+        color: #fe911e;
+        margin: 5px auto;
+        font-size: 24px;
+      }
+    }
+    .space {
+      width: 5px;
+    }
+    .rainChance {
+      flex: 1;
+      color: #48b1de;
+      text-align: center;
+      border: 2px solid #dddddd;
+      border-radius: 10px;
+      padding: 5px;
+      font-size: 24px;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.HelloBlock {
+  flex: 114;
+  border-radius: 10px;
+  background-color: #5dbed2;
+  display: flex;
+  .hello {
+    display: flex;
+    flex-direction: column;
+  }
+  .toggle {
+    padding-top: 40px;
+  }
+}

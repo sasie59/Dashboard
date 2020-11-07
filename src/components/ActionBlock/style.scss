@@ -1,0 +1,45 @@
+.ActionBlock {
+  flex: 204;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  .planA {
+    flex: 1;
+    border-radius: 10px;
+    border: 3px solid #eeeeee;
+    height: 80%;
+    .book {
+      max-width: 100%;
+      max-height: 100%;
+      padding: 50px;
+    }
+  }
+  .planB {
+    flex: 1;
+    height: 200px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    border: 3px solid #eeeeee;
+    height: 80%;
+    .ball {
+      margin-top: 50%;
+      max-width: 100%;
+      max-height: 100%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .space {
+    width: 5px;
+    height: auto;
+  }
+  .gray {
+    background-color: #f4f4f4;
+  }
+
+  .white {
+    background-color: #fff;
+  }
+}
