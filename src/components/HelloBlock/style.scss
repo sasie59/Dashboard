@@ -6,6 +6,9 @@
   .hello {
     display: flex;
     flex-direction: column;
+    .align {
+      margin: 20px 78px;
+    }
   }
   .toggle {
     padding-top: 40px;
